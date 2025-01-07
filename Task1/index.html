@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Adventures</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><b>Global Adventures</b></div>
+            <div class="Menu">
+                <a href="#" id="homeButton"><b>Home</b></a>
+                <a href="#" id="hillStationsButton" onclick="document.getElementById('hillStationsModal').style.display='block'"><b>Hill Stations</b></a>
+                <a href="#" id="aboutUsButton"><b>About Us</b></a>
+                <a href="#" id="galleryButton"><b>Gallery</b></a>
+                <a href="#" id="bestOffersButton"><b>Best Offers</b></a>
+                <a href="#" id="contactUsButton"><b>Contact Us</b></a>
+                <a href="#" id="loginButton"><b>Login</b></a>
+            </div>
+            <div class="Register">
+                <a href="#">Register</a>
+            </div>
+        </nav>  
+        
+        <section class="h-txt">
+            <span><b>Enjoy Your Vacations</b></span>
+            <br><br>
+            <h2 style="font-size: 2.5em; font-weight: bold; letter-spacing: 3px;">Plan Your Dream Journey</h2>
+            <h1><b>International Travel Agency - ITA</b></h1>
+            <br><br><br>
+            <a href="#"><b>!! Book Your Trip Now !!</b></a>
+        </section>
+    </header>
+
+
+<!--About Us Part--->
+    <div class="modal" id="aboutUsModal">
+        <div class="modal-content">
+            <img src="images/about.jpg" alt="About Us">
+            <h2>About Us</h2>
+            <p>We are a leading international travel agency, offering unforgettable vacation experiences. Explore the world with us!
+               Global Adventures is a leading international travel agency, dedicated to offering unforgettable vacation experiences.
+               We specialize in providing tailor-made travel packages that cater to all types of travelers, from adventure enthusiasts to those seeking a peaceful retreat. 
+            </p>
+            <button onclick="document.getElementById('aboutUsModal').style.display='none'">Close</button>
+        </div>
+    </div>
+
+
+ <!-- Hill Stations Part -->
+    <div class="modal" id="hillStationsModal">
+        <div class="modal-content">
+        <h2>Hill Stations</h2>
+        <div class="image-container">
+            <img src="images/hillstation.jpg" alt="Hill Stations">
+            <img src="images/hillstation1.jpg" alt="Hill Stations">
+            <img src="images/hillstation2.jpg" alt="Hill Stations">
+        </div>
+        <p>Experience serene and breathtaking hill stations like the Alps, Himalayas, and Rockies. Perfect for a peaceful retreat!</p>
+        <p>Discover the charm and tranquility of hill stations, where the cool mountain air, scenic views, and lush landscapes provide the perfect escape from daily life.</p> 
+            <p>Whether you're seeking adventure, relaxation, or a picturesque retreat, hill stations like the Swiss Alps, Indian Himalayas, and Rocky Mountains offer a wide range of experiences.</p>
+            </p>Trek through lush forests, enjoy the crisp air, and immerse yourself in nature's beauty. These destinations are ideal for travelers looking to connect with nature, explore charming villages, or enjoy thrilling mountain sports. Let your next getaway be a peaceful and rejuvenating journey in the serene heights of the world's most breathtaking hill stations.</p>
+        <button onclick="document.getElementById('hillStationsModal').style.display='none'">Close</button>
+       </div>   
+    </div>
+
+
+ <!-- Gallery Part -->
+    <div class="modal" id="galleryModal">
+        <div class="modal-content">
+            <h2>Gallery</h2>
+            <div class="image-container">
+                <img src="images/gallery.jpg" alt="Gallery">
+                <img src="images/gallery1.jpg" alt="Gallery">
+                <img src="images/gallery2.jpg" alt="Gallery">
+                <img src="images/gallery3.webp" alt="Gallery">
+            </div>
+            <p>"Embark on a visual journey through breathtaking landscapes from around the world. From serene hill stations to vibrant cityscapes, our gallery showcases the beauty and diversity of our travel adventures.</p>
+            <p>Let these stunning pictures ignite your wanderlust and inspire your next unforgettable journey with us!"</p>
+            <button onclick="document.getElementById('galleryModal').style.display='none'">Close</button>
+        </div>
+    </div>
+
+   
+<!-- Best Offers Part-->
+    <div class="modal" id="bestOffersModal">
+       <div class="modal-content">
+        <img src="images/logo.png" alt="Best Offers">
+        <h2>Exclusive Best Offers</h2>
+        
+        <div class="offers-container">
+            <div class="offer-item">
+                <h3>50% Off on Hill Station Packages</h3>
+                <p>Get a massive 50% discount on all hill station travel packages. Hurry, limited time only!</p>
+                <p><strong>Price:</strong> <span class="currency">$499</span> <strike>$999</strike></p>
+                <p><strong>Offer:</strong> Buy 1, Get 2 Tickets Free!</p>
+                <p><strong>Booking Validity:</strong> Till 31st January 2025</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="offer-item">
+                <h3>Exclusive Beach Resort Getaway</h3>
+                <p>Enjoy a luxurious beach resort experience at a special price. Escape to paradise!</p>
+                <p><strong>Price:</strong> <span class="currency">$799</span> <strike>$1599</strike></p>
+                <p><strong>Offer:</strong> Free Spa Session for Couples!</p>
+                <p><strong>Booking Validity:</strong> Till 28th February 2025</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="offer-item">
+                <h3>Adventure Safari Tour</h3>
+                <p>Experience the thrill of safari tours with a special discount on bookings.</p>
+                <p><strong>Price:</strong> <span class="currency">$249</span> <strike>$499</strike></p>
+                <p><strong>Offer:</strong> Group Discount Available - 10% off for groups of 4 or more!</p>
+                <p><strong>Booking Validity:</strong> Till 15th March 2025</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+
+        <div class="offer-timer">
+            <p><strong>Limited Time Offer:</strong> Book within the next <span id="countdown"></span> to avail the special offers!</p>
+        </div>
+
+        <button onclick="document.getElementById('bestOffersModal').style.display='none'">Close</button>
+    </div>
+</div>
+
+
+<!---Contact Us Part-->
+<div class="modal" id="contactUsModal">
+    <div class="modal-content">
+        <img src="images/contactus.jpeg" alt="Contact Us"> 
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please feel free to reach out to us.</p>
+        <p>Email: contact@globaladventures.com</p>
+        <p>Phone: +1 800 123 456</p>
+        <button onclick="document.getElementById('contactUsModal').style.display='none'">Close</button>
+    </div>
+</div>
+
+
+<!-- login Part-->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <img src="images/login.jpg" alt="Login">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button>Submit</button>
+    </div>
+</div>
+
+
+    
+
+<script src="script.js"></script>
+
+
+<!-- Footer Part --->
+<footer>
+
+           <p>&copy; Global Adventures. All Rights Reserved.</p>
+           <footer>
+            <div class="footer-content">
+                <div class="social-media-icons">
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <img src="images/twitter-icon.webp" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <img src="images/instagram-icon.avif" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                        <img src="images/linkdin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <img src="images/facebook-icon.webp" alt="Facebook">
+                        </a>
+                </div>
+            </div>
+        </footer>
+        
+
+</footer>
+</body>
+</html>
